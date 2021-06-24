@@ -1,0 +1,84 @@
+@import "theme.scss";
+
+body {
+    font-family: "montserrat-regular", Arial, sans-serif;
+    font-size: $font-s;
+    min-width: 1301px;
+    color: $grey;
+    background-color: $sand-light;
+  }
+  
+  @media screen and (min-width: 350px) and (max-width: 800px) {
+    body {
+      min-width: 350px;
+      max-width: 800px;
+    }
+  }
+  
+  img {
+      height: auto;
+  }
+  button {
+      cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $red-light;
+    }
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .btn {
+    padding: $padding-s $padding-m;
+    color: white;
+    background-color: $red-light;
+    border: none;
+    text-transform: uppercase;
+    font-size: $font-s;
+    font-family: 'montserrat-light', Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      color: white;
+    }
+  }
+  .section-header {
+    color: black;
+    font-size: $font-l;
+    text-align: center;
+  }
+  @media screen and (min-width: 350px) and (max-width: 800px) {
+    .container {
+      min-width: 300px;
+      max-width: 750px;
+    }
+  }

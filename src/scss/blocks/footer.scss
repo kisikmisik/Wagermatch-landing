@@ -1,0 +1,32 @@
+@import '../common/theme.scss';
+.footer {
+    background-color: black;
+    color: $sand-light;
+    padding: $padding-m 0;
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        font-size: $font-xs;
+        span {
+            margin-bottom: $margin-s;
+        }
+        a {
+            color: white;
+            &:hover {
+                color: $red-light;
+            }
+
+        }
+    }
+    
+    &__nav {
+        a {
+            color: white;
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

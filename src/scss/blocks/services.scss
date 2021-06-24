@@ -1,0 +1,120 @@
+@import "../common/theme.scss";
+
+.services {
+    padding: $padding-l 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item {
+        border: none;
+
+    }
+    &__desc-info-header {
+        color: black;
+        font-size: 20px;
+    }
+    &__labels {
+        min-width: 285px;
+        margin-left: 2px;
+        input {
+            display: none;
+        }
+        button {
+            border: none;
+            background: transparent;
+            height: 27px;
+            display: block;
+            position: relative;
+            text-transform: uppercase;
+            padding-bottom: 16px;
+            cursor: pointer;
+            z-index: 1;
+            margin-bottom: 37px;
+            width: 160px;
+            text-align: center; 
+            &:hover::before {
+                height: 40px;
+                top: -10px;
+                -webkit-transition: all .2s ease-in-out;
+                -o-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+            }
+        }
+
+        .current {
+            color: $sand-normal;
+            &:before {
+                height: 40px;
+                width: 280px;
+                background-color: black;
+                -webkit-transition: none;
+                -o-transition: none;
+                transition: none;
+                top: -10px;
+                left: 0px;
+            }
+        }
+    }
+    &__header {
+        margin-bottom: 90px;
+    }
+    &__form {
+        display: flex;
+        width: 100%;
+    }
+    &__abs {
+        margin-bottom: $margin-xl;
+        width: 100%;
+    }
+
+    &__contact-btn {
+        text-align: center;
+    }
+
+    &__text {
+        position: relative;
+        width: 457px;
+        top: -51px;
+        left: 97px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 415px;
+            top: 0px;
+            left: -106px;
+            background-color: black;
+        }
+    }
+    .services__desc-info-block {
+        display: none;
+    }
+    .current-service {
+        position: relative;
+        display: block;
+        width: 436px;
+        margin-left: 18px;
+    }
+    .current {
+        opacity: 1;
+    }
+    &__btn:before {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 8px;
+        top: 5px;
+        left: 1px;
+        background-color: $sand-normal;
+        z-index: -1;
+    }
+}
+
+
+
+

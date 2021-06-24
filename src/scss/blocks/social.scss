@@ -1,0 +1,39 @@
+@import "../common/theme.scss";
+.social {
+    margin: 0;
+    padding-top: $padding-xs;
+    &__item {
+        background-color: white;
+        width: 40px;
+        padding-right: 8px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: $margin-s;
+        -webkit-box-shadow: 0px 5px 6px 3px rgba(0,0,0,0.25); 
+        box-shadow: 0px 5px 6px 3px rgba(0,0,0,0.25);
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            padding-left: 10px;
+        }
+        &.fb:hover {
+            padding-left: 10px;
+        }
+        &.vk:hover {
+            padding-left: 10px;
+        }
+        &.gmail:hover {
+            padding-left: 10px;
+        }
+    }  
+    &__link {
+        display: block;
+        padding: 8px;
+        span {
+            font-size: $font-xs;
+        }
+    }
+    &__image {
+        height: 30px;
+        width: auto;
+    }
+}

@@ -1,0 +1,51 @@
+@import "../common/theme.scss";
+
+.header {
+    padding: $padding-s 0;
+    position: relative;
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__nav {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    &__logo {
+        margin-right: $margin-l;
+        width: 135px;
+        box-sizing: border-box;
+    }
+
+    &__social {
+        position: fixed;
+        left: 0;
+        top: 200px;
+        z-index: 100;
+    }
+
+    &__lang-btn {
+        border: 2px solid $grey;
+        background: transparent;
+        width: 40px;
+        height: 25px;
+        overflow: hidden;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+        img {
+            position: absolute;
+            left: -21px;
+            top: -13px;
+            width: 80px;
+            height: 47px;
+        }
+    }
+    
+}

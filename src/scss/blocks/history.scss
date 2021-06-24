@@ -1,0 +1,29 @@
+@import '../common/theme.scss';
+
+.history {
+    background-color: white;
+    padding: $padding-l;
+    &__text-wrapper {
+        p {
+            font-size: $font-m;
+            margin: 0;
+        }
+    }
+
+    &__text-header {
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        margin-top: $margin-l;
+    }
+    &__image-text-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+    &__image {
+        margin-right: $margin-l;
+        margin-bottom: $margin-l;
+    }
+}
