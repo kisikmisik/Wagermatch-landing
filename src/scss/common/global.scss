@@ -71,6 +71,10 @@ body {
       color: white;
     }
   }
+  .section {
+    height: 90vh;
+    box-sizing: border-box;
+  }
   .section-header {
     color: black;
     font-size: $font-l;

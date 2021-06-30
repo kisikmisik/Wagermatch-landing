@@ -1,5 +1,5 @@
 {
-  "name": "polezhino",
+  "name": "wagermatch-landing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,12 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.2"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "browser-sync": "^2.26.14",
-    "gulp-sass": "^4.1.0",
+    "browser-sync": "^2.27.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "node-sass": "^6.0.0"
+    "node-sass": "^6.0.1"
   }
 }
