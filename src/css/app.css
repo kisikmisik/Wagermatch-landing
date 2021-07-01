@@ -331,8 +331,8 @@ body {
   font-family: "montserrat-regular", Arial, sans-serif;
   font-size: 14px;
   min-width: 1301px;
-  color: #8E8D8A;
-  background-color: #EAE7DC; }
+  color: white;
+  background-color: #373738; }
 
 @media screen and (min-width: 350px) and (max-width: 800px) {
   body {
@@ -347,9 +347,9 @@ button {
 
 a {
   text-decoration: none;
-  color: black; }
+  color: white; }
   a:hover {
-    color: #E98074; }
+    color: #f99a04; }
 
 ul {
   padding-left: 0; }
@@ -377,7 +377,7 @@ li {
 .btn {
   padding: 15px 25px;
   color: white;
-  background-color: #E98074;
+  background-color: #f99a04;
   border: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -389,7 +389,7 @@ li {
     color: white; }
 
 .section-header {
-  color: black;
+  color: #f99a04;
   font-size: 34px;
   text-align: center; }
 
@@ -449,7 +449,7 @@ li {
     .footer__copyright a {
       color: white; }
       .footer__copyright a:hover {
-        color: #E98074; }
+        color: #f99a04; }
   .footer__nav a {
     color: white; }
   .footer .container {
@@ -470,10 +470,10 @@ li {
     .nav__item:not(:last-child) {
       border-right: none; }
     .nav__item:hover {
-      border-color: #E98074;
+      border-color: #f99a04;
       top: 3px; }
       .nav__item:hover a {
-        color: #E98074; }
+        color: #f99a04; }
   .nav__link {
     transition: all 0.3s ease-in-out;
     padding: 15px;
@@ -815,8 +815,13 @@ li {
   .social__image {
     height: 30px;
     width: auto; }
+  
 
-
-    section {
-      height: 100vh !important;
-    }
+  section {
+    padding-top: 50px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }

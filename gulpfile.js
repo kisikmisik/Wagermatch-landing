@@ -16,13 +16,14 @@
 //  exports.watchSass = watchSass
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+// const sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 
 const browserSync = require('browser-sync').create();
 //compile scss into css
 function style() {
     return gulp.src('src/scss/app.scss')
-    .pipe(sass().on('error',sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
 }
